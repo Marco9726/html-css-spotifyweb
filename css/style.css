@@ -9,12 +9,20 @@ ul{
     list-style-type: none;
 }
 
+h4{
+    font-size: .9em;
+}
+
 .color-white{
     color: white;
 }
 
 .color-grey{
     color: gray;
+}
+
+.margin-bottom{
+    margin-bottom: 1.5rem;
 }
 
 #container{
@@ -42,19 +50,34 @@ ul{
     justify-content: space-between;
     padding: 1.25rem 1.25rem;
 }
+/* logo  */
+#logo-container{
+    width: 65%;
+}
 
-#sidebar ul i{
+#sidebar i{
     font-size: 1.25rem;
     margin-right: .25rem;
 }
 
-#sidebar ul li{
+#sidebar ul li,
+#sidebar h4{
     margin-bottom: .75rem;
 }
-#logo-container{
-    width: 65%;
-    margin-bottom: 1.5rem;
+
+#playlist i{
+    background-color: grey;
+    padding: 0.5rem;
 }
+
+#playlist span{
+    font-size: 1.15rem;
+    margin-bottom: 1.25rem;
+    display: inline-block;
+}
+
+
+
 
 
 
