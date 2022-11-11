@@ -52,8 +52,6 @@ a{
     border: 1px solid white;
     padding: .75rem 2rem;
     border-radius: 2rem;
-
-    
 }
 
 /* *** SIDEBAR +++  */
@@ -93,7 +91,30 @@ a{
     display: inline-block;
 }
 
+#user div i{
+    font-size: .9rem;
+    margin-right: .75rem;
+    margin-bottom: .75rem;
+}
 
+#user div{
+    font-size: .9rem;
+}
+
+#user hr{
+    border-color: grey;
+    border-top: none;
+    margin-bottom: .75rem;
+}
+
+#user h5{
+    display: inline-block;
+    vertical-align:auto;
+}
+
+#user .fa-circle-user{
+    font-size: 1.75rem;
+}
 /* *** MAIN ***  */
 main{
     background-color: rgb(20,25,34);
