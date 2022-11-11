@@ -5,36 +5,35 @@
     box-sizing: 0;
 }
 
-body{
-    position: relative;
-}
-/* *** TOPBAR ***  */
-#topbar{
-    background-color: rgb(11,13,25);
-    width: calc(100vw - 250px);
-    height: 90px;
-    position: absolute;
-    right: 0;
-    
+/* ***#CONTAINER***  */
+#container{
+    height: calc(100vh - 90px);
+    width: 100vw;
 }
 
 /* *** SIDEBAR +++  */
 #sidebar{
     background-color: black;
     width: 250px;
-    height: calc(100vh - 90px);
-    position: absolute;
-    top: 0;
+    height: 100%;
+    float: left;
 }
+
+/* *** TOPBAR ***  */
+#topbar{
+    background-color: rgb(11,13,25);
+    width: calc(100vw - 250px);
+    height: 90px;
+    float: right;
+}
+
 
 /* *** MAIN ***  */
 main{
     background-color: rgb(20,25,34);
     height: calc(100vh - 180px);
     width: calc(100vw - 250px);
-    position: absolute;
-    top: 90px;
-    right: 0;
+    float: right;
 }
 
 /* *** PLAYERBAR ***  */
@@ -42,6 +41,4 @@ main{
     background-color: rgb(40,40,40);
     height: 90px;
     width: 100%;
-    position: absolute;
-    top: calc(100vh - 90px)
 }
