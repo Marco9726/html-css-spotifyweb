@@ -17,7 +17,6 @@ h2{
 
 h3{
     font-size: 1.2rem;
-    margin-bottom: .5rem;
 }
 
 h4,
@@ -174,6 +173,7 @@ main{
     width: calc(100vw - 240px);
     float: right;
     padding: 90px 1.5rem 1.5rem 1.5rem;
+    overflow: auto;
     
 }
 /* nav  */
@@ -205,6 +205,23 @@ main section{
     margin-top: 2rem;
 }
 
+main section .title span{
+    margin-top: .75rem;
+    display: block;
+}
+
+main section.small{
+    margin-top: 3rem;
+}
+
+main section.small .row-cards{
+    display: flex;
+}
+
+main section.small .row-cards .card{
+    margin-right: 1rem;
+}
+
 .row-cards .card{
     width: calc(100% / 6 - 1rem);
 }
@@ -230,6 +247,8 @@ main section{
     display: flex;
     align-items: center;
     padding: .75rem;
+    z-index: 2;
+    position: sticky;
 }
 
 #playerbar .row{
