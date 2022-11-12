@@ -24,7 +24,7 @@ h4{
 }
 
 .margin-bottom{
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.75rem;
 }
 
 #container{
@@ -78,7 +78,7 @@ a{
 
 #sidebar ul li,
 #sidebar h4{
-    margin-bottom: .75rem;
+    margin-bottom: 1.25rem;
 }
 
 #playlist i{
@@ -134,4 +134,57 @@ main{
     background-color: rgb(40,40,40);
     height: 90px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    padding: .75rem;
+}
+
+#playerbar .row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#playerbar .row .left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+}
+
+#song{
+    display: flex;
+    align-items: center;
+}
+
+#song img{
+    max-width: 3rem;
+    margin-right: .75rem;
+}
+
+
+#song img{
+    width: 100%;
+}
+
+#name{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#name h6{
+    font-size: .9rem;
+}
+
+#name span{
+    font-size: .75rem;
+}
+
+#icons-left i:last-child{
+    margin-left: 1rem;
+}
+
+#icons-left i{
+    font-size: 1.25rem;
 }
