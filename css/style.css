@@ -152,10 +152,10 @@ main{
 }
 /* parte sinistra  */
 #playerbar .row .left{
+    width: 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 220px;
 }
 
 #song{
@@ -223,16 +223,32 @@ main{
     justify-content: space-between;
 }
 
-
-#playerbar .center .timebar input[type=range] {
-    
-    height: 5px;
-    border-radius: 5px;
+input[type=range]{
+    height: .25rem;
+    border-radius: 1rem;
     background: #d3d3d3;
     opacity: 0.7;
+}
+
+#playerbar .center .timebar input[type=range] {
     flex-grow: 2;
     margin-left: .75rem;
     margin-right: .75rem;
 }
+
+/* parte destra  */
+#playerbar .row .right{
+    display: flex;
+}
+#playerbar .right ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#playerbar .right ul li,
+.right input[type=range]{
+    margin-left: 1rem;
+}
+
 
 
