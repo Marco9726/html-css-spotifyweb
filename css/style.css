@@ -42,6 +42,12 @@ a{
     align-items: center;
 }
 
+.flex-column-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* *** TOPBAR ***  */
 #topbar{
     background-color: rgba(0,0,0,0.5);
@@ -83,8 +89,6 @@ a{
     margin-right: .25rem;
     vertical-align: bottom;
 }
-
-
 
 #sidebar ul li,
 #sidebar h4{
@@ -145,6 +149,34 @@ main{
     height: calc(100vh - 90px);
     width: calc(100vw - 240px);
     float: right;
+    padding-top: 90px;
+}
+
+#nav-container{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-container nav{
+    width: 50%;
+}
+
+#nav-container nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav-container nav ul li{
+    font-size: .9rem
+}
+
+#nav-container nav ul li:first-child hr{
+    border-bottom: 2px solid rgb(173,255,46);
+    border-top: none;
+    width: 40%;
+    margin: auto;
 }
 
 /* *** PLAYERBAR ***  */
@@ -171,12 +203,6 @@ main{
     width: 100%;
 }
 
-#name{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
 #name h6{
     font-size: .9rem;
 }
@@ -198,8 +224,6 @@ main{
 #playerbar .center{
     width: 38%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 #playerbar .center .commands{
