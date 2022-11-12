@@ -11,11 +11,24 @@ ul{
     list-style-type: none;
 }
 
-h4{
+h2{
+    font-size: 1.75rem;
+}
+
+h3{
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+
+h4,
+.small-text{
     font-size: .9em;
 }
 
-.color-white{
+.color-white,
+h4,
+h3,
+h2{
     color: white;
 }
 
@@ -40,6 +53,11 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.flex-between{
+    display: flex;
+    justify-content: space-between;
 }
 
 .flex-column-center{
@@ -77,10 +95,20 @@ a{
     flex-direction: column;
     justify-content: space-between;
     padding: 1.25rem 1.25rem 0.5rem;
+    position: relative;
 }
 /* logo  */
 #logo-container{
     width: 65%;
+}
+
+#sidebar nav hr{
+    border: 2px solid rgb(173,255,46);
+    transform: rotate(90deg);
+    width: 2.5rem;
+    position: absolute;
+    left: -1.25rem;
+    top: calc(90px + .25rem)
 }
 
 #sidebar nav img,
@@ -105,10 +133,6 @@ a{
     font-size: 1.15rem;
     margin-bottom: 1.25rem;
     display: inline-block;
-}
-
-#user div{
-    font-size: .9rem;
 }
 
 #profile{
@@ -149,9 +173,10 @@ main{
     height: calc(100vh - 90px);
     width: calc(100vw - 240px);
     float: right;
-    padding-top: 90px;
+    padding: 90px 1.5rem 1.5rem 1.5rem;
+    
 }
-
+/* nav  */
 #nav-container{
     height: 50px;
     display: flex;
@@ -168,15 +193,33 @@ main{
     justify-content: space-between;
 }
 
-#nav-container nav ul li{
-    font-size: .9rem
-}
-
 #nav-container nav ul li:first-child hr{
     border-bottom: 2px solid rgb(173,255,46);
     border-top: none;
     width: 40%;
     margin: auto;
+}
+
+/* section cards  */
+main section{
+    margin-top: 2rem;
+}
+
+.row-cards .card{
+    width: calc(100% / 6 - 1rem);
+}
+
+.row-cards .card img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.card .descrition {
+    text-align:center;
+}
+
+.card .descrition span{
+    font-size: .9rem;
 }
 
 /* *** PLAYERBAR ***  */
@@ -203,9 +246,6 @@ main{
     width: 100%;
 }
 
-#name h6{
-    font-size: .9rem;
-}
 
 #name span{
     font-size: .75rem;
