@@ -71,19 +71,18 @@ a{
     width: 65%;
 }
 
-#sidebar i{
-    font-size: 1.25rem;
+#sidebar nav img,
+#profile{
+    height: 1.5rem;
     margin-right: .25rem;
+    vertical-align: bottom;
 }
+
+
 
 #sidebar ul li,
 #sidebar h4{
     margin-bottom: 1.25rem;
-}
-
-#playlist i{
-    background-color: grey;
-    padding: 0.5rem;
 }
 
 #playlist span{
@@ -92,20 +91,27 @@ a{
     display: inline-block;
 }
 
-#user div:first-child i{
-    font-size: .9rem;
-    margin-right: .75rem;
-    margin-bottom: .75rem;
-}
-
 #user div{
     font-size: .9rem;
+}
+
+#profile{
+    border-radius: 100%;
+    width: 1.5rem;
+    background-color: grey;
+    margin-right: .5rem;
+}
+
+#user #download{
+    height: 1rem;
+    vertical-align: bottom;
 }
 
 #user hr{
     border-color: grey;
     border-top: none;
     margin-bottom: .75rem;
+    margin-top: .75rem;
 }
 
 #user h5{
@@ -144,7 +150,7 @@ main{
     justify-content: space-between;
     width: 100%;
 }
-
+/* parte sinistra  */
 #playerbar .row .left{
     display: flex;
     align-items: center;
@@ -160,10 +166,6 @@ main{
 #song img{
     max-width: 3rem;
     margin-right: .75rem;
-}
-
-
-#song img{
     width: 100%;
 }
 
@@ -185,6 +187,52 @@ main{
     margin-left: 1rem;
 }
 
-#icons-left i{
+#icons-left i,
+#playerbar .center .commands ul i{
     font-size: 1.25rem;
 }
+
+/* parte centrale  */
+#playerbar .center{
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#playerbar .center .commands{
+    width: 40%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#playerbar .center .commands ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#playerbar .center .commands .fa-circle-play{
+    font-size: 2rem;
+}
+
+#playerbar .center .timebar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#playerbar .center .timebar input[type=range] {
+    
+    height: 5px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    opacity: 0.7;
+    flex-grow: 2;
+    margin-left: .75rem;
+    margin-right: .75rem;
+}
+
+
