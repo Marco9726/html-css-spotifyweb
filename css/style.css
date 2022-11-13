@@ -101,6 +101,10 @@ a{
     width: 65%;
 }
 
+#sidebar .hidden{
+    display: none;
+}
+
 #sidebar nav hr{
     border: 2px solid rgb(173,255,46);
     transform: rotate(90deg);
@@ -399,7 +403,53 @@ input[type=range]{
 
 /* xsmall < 576px  */
 @media screen and (max-width: 575px) {
-   
+    /* topbar  */
+    #topbar{
+        width: calc(100vw - 50px);   
+    }
+
+    /* sidebar  */
+    #sidebar{
+        width: 50px;
+        padding: 1rem;
+    }
+
+    #sidebar #logo-container,
+    #sidebar .color-grey,
+    #playlist,
+    #sidebar hr,
+    #user{
+        display: none;
+    }
+
+    #sidebar .hidden{
+        display: block;
+        text-align: center;
+    }
+
+    .hidden #profile{
+        margin-top: .5rem;
+    }
+
+    .hidden #download{
+        height: 1rem;
+        text-align: center;
+    }
+    
+    /* main  */
+    main {
+        width: calc(100vw - 50px);
+    }
+
+    /* #playerbar */
+    #playerbar .right ul{
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    #playerbar .right,#playerbar .left{
+        width: 20%;
+    }
 }
 
 
