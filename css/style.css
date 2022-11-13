@@ -78,7 +78,7 @@ a{
     padding-right: 2.5rem;
 }
 
-#topbar span{
+#topbar a{
     border: 1px solid white;
     padding: .75rem 2rem;
     border-radius: 2rem;
@@ -223,6 +223,20 @@ main section.small .row-cards{
     gap: 1rem;
 }
 
+.play-button{
+    color: white;
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.img-container{
+    position: relative;
+}
+
 
 
 .row-cards .card{
@@ -339,6 +353,21 @@ input[type=range]{
 .right input{
     width: 100%;
 }
+
+/* *** HOVER ***  */
+.card img:hover{
+    filter: opacity(0.5);
+    position: relative;
+}
+
+.card img:hover + .play-button{
+    opacity: 1;
+}
+
+#topbar a:hover{
+    font-size: 1.25rem;
+}
+
 
 /* ******** RESPONSIVE *********  */
 /* medium < 992px */
