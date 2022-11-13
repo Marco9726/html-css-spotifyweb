@@ -77,6 +77,7 @@ a{
     align-items: center;
     justify-content: right;
     padding-right: 2.5rem;
+    z-index: 2;
 }
 
 #topbar a{
@@ -464,7 +465,7 @@ a:hover{
     }
 
     #sidebar #logo-container,
-    #sidebar .color-grey,
+    #sidebar .visible,
     #playlist,
     #sidebar hr,
     #user{
