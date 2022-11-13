@@ -31,7 +31,8 @@ h2{
     color: white;
 }
 
-.color-grey{
+.color-grey,
+li a{
     color: gray;
 }
 
@@ -132,7 +133,7 @@ a{
     margin-right: .5rem;
 }
 
-#playlist span{
+#playlist .crea{
     font-size: 1.15rem;
     margin-bottom: 1.25rem;
     display: inline-block;
@@ -148,6 +149,7 @@ a{
 #user #download{
     height: 1rem;
     vertical-align: bottom;
+    margin-right: .5rem;
 }
 
 #user hr{
@@ -161,10 +163,6 @@ a{
     display: inline-block;
 }
 
-#user .fa-circle-user{
-    font-size: 1.75rem;
-    margin-right: .75rem;
-}
 
 #user div:last-child{
     display: flex;
@@ -315,6 +313,10 @@ main section.small .row-cards{
     gap: 2rem;
 }
 
+#playerbar .center .commands ul i{
+    cursor: pointer;
+}
+
 #playerbar .center .commands .fa-circle-play{
     font-size: 2rem;
 }
@@ -368,6 +370,24 @@ input[type=range]{
     font-size: 1.25rem;
 }
 
+#playerbar .center .commands #play:hover{
+    font-size: 2.1rem;
+}
+
+a:hover{
+    color: white;
+}
+
+#playerbar #name span:hover{
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#icons-left i:hover{
+    color: white;
+    cursor: pointer;
+}
 
 /* ******** RESPONSIVE *********  */
 /* medium < 992px */
