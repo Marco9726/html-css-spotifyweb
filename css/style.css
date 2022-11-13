@@ -239,6 +239,10 @@ main section.small .row-cards .card{
     font-size: .9rem;
 }
 
+.round{
+    border-radius: 100%;
+}
+
 /* *** PLAYERBAR ***  */
 #playerbar{
     background-color: rgb(40,40,40);
