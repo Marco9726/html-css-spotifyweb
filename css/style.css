@@ -216,11 +216,10 @@ main section.small{
 
 main section.small .row-cards{
     display: flex;
+    gap: 1rem;
 }
 
-main section.small .row-cards .card{
-    margin-right: 1rem;
-}
+
 
 .row-cards .card{
     width: calc(100% / 6 - 1rem);
@@ -314,9 +313,9 @@ input[type=range]{
 }
 
 #playerbar .center .timebar input[type=range] {
-    flex-grow: 2;
     margin-left: .75rem;
     margin-right: .75rem;
+    flex-grow: 2;
 }
 
 /* parte destra  */
@@ -329,6 +328,14 @@ input[type=range]{
     margin-left: 1rem;
 }
 
+#playerbar .right ul li:last-child{
+    margin-left: 1rem;flex-grow: 2;
+}
+
+.right input{
+    width: 100%;
+}
+
 /* ******** RESPONSIVE *********  */
 /* medium < 992px */
 @media screen and (max-width: 991px) {
@@ -339,6 +346,7 @@ input[type=range]{
     main #nav-container nav ul{
         flex-wrap: wrap;
         justify-content: space-around;
+        gap: 2rem;
     }
 
    /* main, section cards  */
@@ -355,13 +363,37 @@ input[type=range]{
     /* #playerbar  */
     #playerbar .row .left{
         gap: 3.5rem;
-     }
+    }
 }
 
 
 /* small < 768px  */
 @media screen and (max-width: 767px) {
-   
+   /* main, section cards  */
+    main .row-cards .card{
+        width: calc(100% / 2 - 1rem);
+    }
+
+    /* #playerbar  */
+    #playerbar .row .left{
+        gap: 2rem;
+        width: 31%;
+        padding-right: 3rem;
+    }
+
+     #playerbar .row .right{
+        width: 31%;
+    }
+
+     #playerbar .row .left #icons-left{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+     #playerbar .row .left #icons-left i{
+        margin-left: 0;
+    }
 }
 
 
