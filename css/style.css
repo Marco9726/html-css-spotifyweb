@@ -113,7 +113,7 @@ a{
     width: 2.5rem;
     position: absolute;
     left: -1.25rem;
-    top: calc(90px + .25rem)
+    top: calc(90px + .25rem);
 }
 
 #sidebar nav img,
@@ -126,10 +126,6 @@ a{
 #sidebar ul li,
 #sidebar h4{
     margin-bottom: 1.25rem;
-}
-
-#sidebar section{
-    overflow-y: auto;
 }
 
 #playlist i{
@@ -197,13 +193,6 @@ main{
 #nav-container nav ul{
     display: flex;
     justify-content: space-between;
-}
-
-#nav-container nav ul li:first-child hr{
-    border-bottom: 2px solid rgb(173,255,46);
-    border-top: none;
-    width: 40%;
-    margin: auto;
 }
 
 /* section cards  */
@@ -313,6 +302,7 @@ main section.small .row-cards{
 
 #playerbar .center .commands ul{
     gap: 2rem;
+    position: relative;
 }
 
 #playerbar .center .commands ul i{
@@ -321,6 +311,27 @@ main section.small .row-cards{
 
 #playerbar .center .commands .fa-circle-play{
     font-size: 2rem;
+}
+
+#playerbar .center .commands .fa-circle-play:active{
+    display: none;
+}
+
+#playerbar .center .commands .fa-circle-play:active ~ #pause{
+    display: block;
+}
+
+#playerbar .center .commands .fa-circle-pause{
+    font-size: 2rem;
+}
+
+#pause{
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translate(+50%);
+    display: none;
 }
 
 #playerbar .center .timebar{
@@ -359,6 +370,10 @@ input[type=range]{
 }
 
 /* *** HOVER ***  */
+#nav-container nav ul li:hover{
+    border-bottom: 1px solid  rgb(173,255,46);
+}
+
 .card img:hover{
     filter: opacity(0.5);
     position: relative;
@@ -372,7 +387,7 @@ input[type=range]{
     font-size: 1.25rem;
 }
 
-#playerbar .center .commands #play:hover{
+#playerbar .center .commands #play i:hover{
     font-size: 2.1rem;
 }
 
@@ -380,7 +395,7 @@ a:hover{
     color: white;
 }
 
-#playerbar #name span:hover{
+#playerbar #name span:hover {
     color: white;
     text-decoration: underline;
     cursor: pointer;
@@ -514,4 +529,16 @@ a:hover{
     }
 }
 
+
+@media screen and (max-height: 520px) {
+    #playlist{
+        height: 88%;
+        overflow-y: auto;
+    }
+
+    #playlist ul{
+        height: 20%;
+        overflow-y: auto;
+    }
+}
 
