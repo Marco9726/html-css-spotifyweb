@@ -275,7 +275,6 @@ main section.small .row-cards{
     width: 100%;
 }
 
-
 #name span{
     font-size: .75rem;
 }
@@ -312,16 +311,15 @@ main section.small .row-cards{
 #playerbar .center .commands .fa-circle-play{
     font-size: 2rem;
 }
-
-#playerbar .center .commands .fa-circle-play:active{
+/* #playerbar .center .commands .fa-circle-play:active{
     display: none;
 }
 
 #playerbar .center .commands .fa-circle-play:active ~ #pause{
     display: block;
-}
+} */
 
-#playerbar .center .commands .fa-circle-pause{
+/* #playerbar .center .commands .fa-circle-pause{
     font-size: 2rem;
 }
 
@@ -332,7 +330,7 @@ main section.small .row-cards{
     right: 50%;
     transform: translate(+50%);
     display: none;
-}
+} */
 
 #playerbar .center .timebar{
     width: 100%;
@@ -343,6 +341,7 @@ input[type=range]{
     border-radius: 1rem;
     background: #d3d3d3;
     opacity: 0.7;
+    accent-color: lightgrey;
 }
 
 #playerbar .center .timebar input[type=range] {
@@ -435,7 +434,6 @@ a:hover{
         gap: 3.5rem;
     }
 }
-
 
 /* small < 768px  */
 @media screen and (max-width: 767px) {
