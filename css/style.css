@@ -187,12 +187,12 @@ main{
 }
 
 #nav-container nav{
-    width: 50%;
+    width: 60%;
 }
 
 #nav-container nav ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;   
 }
 
 /* section cards  */
