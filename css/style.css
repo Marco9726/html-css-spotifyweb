@@ -272,7 +272,6 @@ main section.small .row-cards{
 #song img{
     max-width: 3rem;
     margin-right: .75rem;
-    width: 100%;
 }
 
 #name span{
@@ -340,7 +339,6 @@ input[type=range]{
     height: .25rem;
     border-radius: 1rem;
     background: #d3d3d3;
-    opacity: 0.7;
     accent-color: lightgrey;
 }
 
@@ -371,6 +369,10 @@ input[type=range]{
 /* *** HOVER ***  */
 #nav-container nav ul li:hover{
     border-bottom: 1px solid  rgb(173,255,46);
+}
+
+input[type=range]:hover{
+    accent-color: rgb(173,255,46);
 }
 
 .card img:hover{
@@ -507,7 +509,7 @@ a:hover{
 
     /* #playerbar */
     #playerbar .row .left{
-        gap: 4rem;
+        gap: 2rem;
     }
 
     #playerbar .right ul{
@@ -539,4 +541,22 @@ a:hover{
         overflow-y: auto;
     }
 }
+@media screen and (max-width: 520px) {
+
+    #song img{
+        max-width: 2rem;
+        margin-right: .5rem;
+    } */
+
+    #playerbar .row .left {
+        gap: 1rem;
+    }
+
+    #playerbar .row .center .commands ul{
+        gap: 1rem;
+    }
+
+}
+
+
 
