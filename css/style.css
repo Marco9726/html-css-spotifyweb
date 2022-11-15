@@ -197,11 +197,6 @@ main{
     width: 60%;
 }
 
-#nav-container nav ul{
-    display: flex;
-    justify-content: space-between;   
-}
-
 /* section cards  */
 main section{
     margin-top: 2rem;
@@ -422,9 +417,11 @@ a:hover{
         width: 100%;  
     }
     main #nav-container nav ul{
-        flex-wrap: wrap;
-        justify-content: space-around;
-        gap: 2rem;
+        overflow-x: auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 1.5rem;
+        text-align: center;
     }
 
    /* main, section cards  */
@@ -447,6 +444,10 @@ a:hover{
 /* small < 768px  */
 @media screen and (max-width: 767px) {
    /* main, section cards  */
+    main{
+        padding-top: 100px;
+    }
+
     main .row-cards .card{
         width: calc(100% / 2 - 1rem);
     }
@@ -552,7 +553,6 @@ a:hover{
     }
     
 }
-
 
 /* height responsive mq  */
 @media screen and (max-height: 600px) {
