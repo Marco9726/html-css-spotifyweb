@@ -153,6 +153,13 @@ a{
     margin-right: .5rem;
 }
 
+#user{
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+}
+
 #user hr{
     border-color: grey;
     border-top: none;
@@ -529,33 +536,41 @@ a:hover{
     }
 }
 
+@media screen and (max-width: 520px) {
+    
+    #song img{
+        max-width: 2rem;
+        margin-right: .5rem;
+    } */
+    
+    #playerbar .row .left {
+        gap: 1rem;
+    }
+    
+    #playerbar .row .center .commands ul{
+        gap: 1rem;
+    }
+    
+}
 
-@media screen and (max-height: 520px) {
+
+/* height responsive mq  */
+@media screen and (max-height: 600px) {
     #playlist{
         height: 88%;
         overflow-y: auto;
     }
 
     #playlist ul{
-        height: 20%;
+        height: 30%;
         overflow-y: auto;
     }
 }
-@media screen and (max-width: 520px) {
 
-    #song img{
-        max-width: 2rem;
-        margin-right: .5rem;
-    } */
-
-    #playerbar .row .left {
-        gap: 1rem;
+@media screen and (max-height: 380px) {
+    #user{
+        display: none;
     }
-
-    #playerbar .row .center .commands ul{
-        gap: 1rem;
-    }
-
 }
 
 
